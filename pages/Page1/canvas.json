@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1680,
+          "bottomRow": 1710,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -28,18 +28,19 @@
           "children": [
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "widgetName": "Tabs1",
+              "widgetName": "Table",
               "isCanvas": true,
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
-              "topRow": 58,
-              "bottomRow": 137,
+              "topRow": 16,
+              "bottomRow": 80,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
               "shouldScrollContents": false,
               "animateLoading": true,
               "parentColumnSpace": 14.0625,
+              "dynamicTriggerPathList": [],
               "leftColumn": 1,
               "dynamicBindingPathList": [
                 {
@@ -67,6 +68,7 @@
                   "shouldScrollContents": false,
                   "minHeight": 400,
                   "parentColumnSpace": 1,
+                  "dynamicTriggerPathList": [],
                   "leftColumn": 0,
                   "dynamicBindingPathList": [
                     {
@@ -619,7 +621,7 @@
                   "isDisabled": false,
                   "key": "wco0qq446v",
                   "isDeprecated": false,
-                  "tabName": "Tab 1",
+                  "tabName": "Sales Orders",
                   "rightColumn": 337.5,
                   "detachFromLayout": true,
                   "widgetId": "4tohc6nsyn",
@@ -645,6 +647,7 @@
                   "shouldScrollContents": false,
                   "minHeight": 400,
                   "parentColumnSpace": 1,
+                  "dynamicTriggerPathList": [],
                   "leftColumn": 0,
                   "dynamicBindingPathList": [
                     {
@@ -702,38 +705,13 @@
                     },
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "widgetName": "Table2",
-                      "defaultPageSize": 0,
-                      "columnOrder": [
-                        "custid",
-                        "companyname",
-                        "contactname",
-                        "contacttitle",
-                        "address",
-                        "city",
-                        "region",
-                        "postalcode",
-                        "country",
-                        "phone",
-                        "fax",
-                        "rowIndex"
-                      ],
                       "isVisibleDownload": true,
-                      "dynamicPropertyPathList": [],
-                      "displayName": "Table",
                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                      "searchTags": [
-                        "datagrid"
-                      ],
                       "topRow": 10,
-                      "bottomRow": 53,
                       "isSortable": true,
-                      "parentRowSpace": 10,
+                      "onPageChange": "{{getCustomerData.run()}}",
                       "type": "TABLE_WIDGET",
-                      "defaultSelectedRow": "0",
-                      "hideCard": false,
                       "animateLoading": true,
-                      "dynamicTriggerPathList": [],
                       "dynamicBindingPathList": [
                         {
                           "key": "tableData"
@@ -803,6 +781,68 @@
                         }
                       ],
                       "leftColumn": 1,
+                      "delimiter": ",",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisibleFilters": true,
+                      "isVisible": true,
+                      "enableClientSideSearch": true,
+                      "version": 3,
+                      "totalRecordsCount": 0,
+                      "isLoading": false,
+                      "childStylesheet": {
+                        "button": {
+                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "menuButton": {
+                          "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "iconButton": {
+                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        }
+                      },
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "columnSizeMap": {
+                        "task": 245,
+                        "step": 62,
+                        "status": 75,
+                        "custid": 81
+                      },
+                      "widgetName": "Table2",
+                      "defaultPageSize": 0,
+                      "columnOrder": [
+                        "custid",
+                        "companyname",
+                        "contactname",
+                        "contacttitle",
+                        "address",
+                        "city",
+                        "region",
+                        "postalcode",
+                        "country",
+                        "phone",
+                        "fax",
+                        "rowIndex"
+                      ],
+                      "dynamicPropertyPathList": [],
+                      "displayName": "Table",
+                      "searchTags": [
+                        "datagrid"
+                      ],
+                      "bottomRow": 53,
+                      "parentRowSpace": 10,
+                      "defaultSelectedRow": "0",
+                      "hideCard": false,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onPageChange"
+                        }
+                      ],
                       "primaryColumns": {
                         "custid": {
                           "index": 0,
@@ -929,7 +969,7 @@
                           "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
-                          "isVisible": true,
+                          "isVisible": false,
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
@@ -1005,7 +1045,7 @@
                           "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
-                          "isVisible": true,
+                          "isVisible": false,
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
@@ -1024,7 +1064,7 @@
                           "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
-                          "isVisible": true,
+                          "isVisible": false,
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
@@ -1033,58 +1073,28 @@
                           "cellBackground": ""
                         }
                       },
-                      "delimiter": ",",
                       "key": "o8s5753tuq",
                       "derivedColumns": {},
                       "isDeprecated": false,
                       "rightColumn": 63,
                       "textSize": "0.875rem",
                       "widgetId": "adc09u3ti6",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisibleFilters": true,
                       "tableData": "{{getCustomerData.data}}",
-                      "isVisible": true,
                       "label": "Data",
                       "searchKey": "",
-                      "enableClientSideSearch": true,
-                      "version": 3,
-                      "totalRecordsCount": 0,
                       "parentId": "fj2y7s67gs",
+                      "serverSidePaginationEnabled": true,
                       "renderMode": "CANVAS",
-                      "isLoading": false,
                       "horizontalAlignment": "LEFT",
                       "isVisibleSearch": true,
-                      "childStylesheet": {
-                        "button": {
-                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                          "boxShadow": "none"
-                        },
-                        "menuButton": {
-                          "menuColor": "{{appsmith.theme.colors.primaryColor}}",
-                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                          "boxShadow": "none"
-                        },
-                        "iconButton": {
-                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                          "boxShadow": "none"
-                        }
-                      },
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "isVisiblePagination": true,
-                      "verticalAlignment": "CENTER",
-                      "columnSizeMap": {
-                        "task": 245,
-                        "step": 62,
-                        "status": 75
-                      }
+                      "verticalAlignment": "CENTER"
                     }
                   ],
                   "isDisabled": false,
                   "key": "wco0qq446v",
                   "isDeprecated": false,
-                  "tabName": "Tab 2",
+                  "tabName": "Customers",
                   "rightColumn": 337.5,
                   "detachFromLayout": true,
                   "widgetId": "fj2y7s67gs",
@@ -1106,16 +1116,454 @@
               "shouldShowTabs": true,
               "tabsObj": {
                 "tab1": {
-                  "label": "Tab 1",
+                  "label": "Sales Orders",
                   "id": "tab1",
                   "widgetId": "4tohc6nsyn",
                   "isVisible": true,
                   "index": 0
                 },
                 "tab2": {
-                  "label": "Tab 2",
+                  "label": "Customers",
                   "id": "tab2",
                   "widgetId": "fj2y7s67gs",
+                  "isVisible": true,
+                  "index": 1
+                }
+              },
+              "isVisible": true,
+              "version": 3,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "isVisibleDownload": true,
+              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+              "topRow": 84,
+              "isSortable": true,
+              "onPageChange": "{{getOrderDetails.run()}}",
+              "type": "TABLE_WIDGET",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "childStylesheet.button.buttonColor"
+                },
+                {
+                  "key": "childStylesheet.button.borderRadius"
+                },
+                {
+                  "key": "childStylesheet.menuButton.menuColor"
+                },
+                {
+                  "key": "childStylesheet.menuButton.borderRadius"
+                },
+                {
+                  "key": "childStylesheet.iconButton.buttonColor"
+                },
+                {
+                  "key": "childStylesheet.iconButton.borderRadius"
+                },
+                {
+                  "key": "primaryColumns.orderid.computedValue"
+                },
+                {
+                  "key": "primaryColumns.productid.computedValue"
+                },
+                {
+                  "key": "primaryColumns.unitprice.computedValue"
+                },
+                {
+                  "key": "primaryColumns.qty.computedValue"
+                },
+                {
+                  "key": "primaryColumns.discount.computedValue"
+                },
+                {
+                  "key": "primaryColumns.rowIndex.computedValue"
+                }
+              ],
+              "leftColumn": 2,
+              "delimiter": ",",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": true,
+              "isVisible": true,
+              "enableClientSideSearch": true,
+              "version": 3,
+              "totalRecordsCount": 0,
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "columnSizeMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75,
+                "productid": 101,
+                "orderid": 107,
+                "unitprice": 157,
+                "qty": 112,
+                "discount": 93.3125
+              },
+              "widgetName": "Table3",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "orderid",
+                "productid",
+                "unitprice",
+                "qty",
+                "discount",
+                "rowIndex"
+              ],
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "searchTags": [
+                "datagrid"
+              ],
+              "bottomRow": 126,
+              "parentRowSpace": 10,
+              "defaultSelectedRow": "0",
+              "hideCard": false,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onPageChange"
+                }
+              ],
+              "primaryColumns": {
+                "orderid": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "orderid",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "orderid",
+                  "computedValue": "{{Table3.sanitizedTableData.map((currentRow) => ( currentRow.orderid))}}",
+                  "cellBackground": ""
+                },
+                "productid": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "productid",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "productid",
+                  "computedValue": "{{Table3.sanitizedTableData.map((currentRow) => ( currentRow.productid))}}",
+                  "cellBackground": ""
+                },
+                "unitprice": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "unitprice",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "unitprice",
+                  "computedValue": "{{Table3.sanitizedTableData.map((currentRow) => ( currentRow.unitprice))}}",
+                  "cellBackground": ""
+                },
+                "qty": {
+                  "index": 3,
+                  "width": 150,
+                  "id": "qty",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "qty",
+                  "computedValue": "{{Table3.sanitizedTableData.map((currentRow) => ( currentRow.qty))}}",
+                  "cellBackground": ""
+                },
+                "discount": {
+                  "index": 4,
+                  "width": 150,
+                  "id": "discount",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "discount",
+                  "computedValue": "{{Table3.sanitizedTableData.map((currentRow) => ( currentRow.discount))}}",
+                  "cellBackground": ""
+                },
+                "rowIndex": {
+                  "index": 5,
+                  "width": 150,
+                  "id": "rowIndex",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "rowIndex",
+                  "computedValue": "{{Table3.sanitizedTableData.map((currentRow) => ( currentRow.rowIndex))}}",
+                  "cellBackground": ""
+                }
+              },
+              "key": "ufzv35e0d6",
+              "derivedColumns": {},
+              "isDeprecated": false,
+              "rightColumn": 43,
+              "textSize": "0.875rem",
+              "widgetId": "hakxr8f4br",
+              "tableData": "{{getOrderDetails.data}}",
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "serverSidePaginationEnabled": true,
+              "renderMode": "CANVAS",
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "Tabs1",
+              "isCanvas": true,
+              "displayName": "Tabs",
+              "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
+              "topRow": 134,
+              "bottomRow": 169,
+              "parentRowSpace": 10,
+              "type": "TABS_WIDGET",
+              "hideCard": false,
+              "shouldScrollContents": false,
+              "animateLoading": true,
+              "parentColumnSpace": 14.0625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                }
+              ],
+              "children": [
+                {
+                  "tabId": "tab1",
+                  "boxShadow": "none",
+                  "widgetName": "Canvas3",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 390,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": true,
+                  "hideCard": true,
+                  "shouldScrollContents": false,
+                  "minHeight": 400,
+                  "parentColumnSpace": 1,
+                  "dynamicTriggerPathList": [],
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [
+                    {
+                      "key": "borderRadius"
+                    },
+                    {
+                      "key": "accentColor"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "widgetName": "Progress1",
+                      "progressType": "circular",
+                      "isCanvas": false,
+                      "displayName": "Progress",
+                      "iconSVG": "/static/media/icon.9b0d7b96a0223e8120bf6f14aca4154a.svg",
+                      "searchTags": [
+                        "percent"
+                      ],
+                      "topRow": 4,
+                      "bottomRow": 19,
+                      "parentRowSpace": 10,
+                      "type": "PROGRESS_WIDGET",
+                      "isIndeterminate": false,
+                      "hideCard": false,
+                      "fillColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "parentColumnSpace": 11.11328125,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 4,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "fillColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "progress"
+                        }
+                      ],
+                      "key": "3335tukaa0",
+                      "showResult": false,
+                      "isDeprecated": false,
+                      "rightColumn": 17,
+                      "counterClosewise": false,
+                      "widgetId": "0f0ewcr2pf",
+                      "isVisible": true,
+                      "steps": 1,
+                      "version": 1,
+                      "parentId": "qqifdl6i7q",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "progress": "{{getSalesOrderData.data.filter (order => order.shippeddate !== '').length / 100 * 100 }}"
+                    }
+                  ],
+                  "isDisabled": false,
+                  "key": "ethf93ie8g",
+                  "isDeprecated": false,
+                  "tabName": "Order Overview",
+                  "rightColumn": 337.5,
+                  "detachFromLayout": true,
+                  "widgetId": "qqifdl6i7q",
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "k6jc2hn4sx",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                },
+                {
+                  "tabId": "tab2",
+                  "boxShadow": "none",
+                  "widgetName": "Canvas4",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 400,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": true,
+                  "hideCard": true,
+                  "shouldScrollContents": false,
+                  "minHeight": 400,
+                  "parentColumnSpace": 1,
+                  "dynamicTriggerPathList": [],
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [
+                    {
+                      "key": "borderRadius"
+                    },
+                    {
+                      "key": "accentColor"
+                    }
+                  ],
+                  "children": [],
+                  "isDisabled": false,
+                  "key": "ethf93ie8g",
+                  "isDeprecated": false,
+                  "tabName": "",
+                  "rightColumn": 337.5,
+                  "detachFromLayout": true,
+                  "widgetId": "54dr1cavvr",
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "k6jc2hn4sx",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              ],
+              "key": "yjasev8rhu",
+              "isDeprecated": false,
+              "rightColumn": 54,
+              "widgetId": "k6jc2hn4sx",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "defaultTab": "",
+              "shouldShowTabs": true,
+              "tabsObj": {
+                "tab1": {
+                  "label": "Order Overview",
+                  "id": "tab1",
+                  "widgetId": "qqifdl6i7q",
+                  "isVisible": true,
+                  "index": 0
+                },
+                "tab2": {
+                  "label": "",
+                  "id": "tab2",
+                  "widgetId": "54dr1cavvr",
                   "isVisible": true,
                   "index": 1
                 }
@@ -1134,6 +1582,16 @@
             {
               "id": "Page1_getCustomerData",
               "name": "getCustomerData",
+              "confirmBeforeExecute": false,
+              "pluginType": "SAAS",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Page1_getOrderDetails",
+              "name": "getOrderDetails",
               "confirmBeforeExecute": false,
               "pluginType": "SAAS",
               "jsonPathKeys": [],
