@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 2000,
+          "bottomRow": 2070,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -38,14 +38,18 @@
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
               "topRow": 9,
-              "bottomRow": 73,
+              "bottomRow": 105,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
               "shouldScrollContents": true,
               "animateLoading": true,
               "parentColumnSpace": 14.0625,
-              "dynamicTriggerPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onTabSelected"
+                }
+              ],
               "leftColumn": 4,
               "dynamicBindingPathList": [
                 {
@@ -715,7 +719,7 @@
                   "widgetName": "Canvas4Copy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 390,
+                  "bottomRow": 550,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -736,29 +740,17 @@
                   "children": [
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "widgetName": "Chart1Copy",
-                      "allowScroll": false,
-                      "displayName": "Chart",
-                      "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
-                      "searchTags": [
-                        "graph",
-                        "visuals",
-                        "visualisations"
-                      ],
-                      "topRow": 2,
-                      "bottomRow": 32,
+                      "widgetName": "Statbox2",
+                      "isCanvas": true,
+                      "displayName": "Stats Box",
+                      "iconSVG": "/static/media/icon.382a7c7bc55323fbbd8edd79208c5324.svg",
+                      "topRow": 1,
+                      "bottomRow": 53,
                       "parentRowSpace": 10,
-                      "type": "CHART_WIDGET",
+                      "type": "STATBOX_WIDGET",
                       "hideCard": false,
-                      "chartData": {
-                        "g2xgzbzbko": {
-                          "seriesName": "employeeOrders",
-                          "data": "{{ getSalesOrderData.data}}"
-                        }
-                      },
                       "animateLoading": true,
-                      "parentColumnSpace": 10.4541015625,
-                      "dynamicTriggerPathList": [],
+                      "parentColumnSpace": 11.7724609375,
                       "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
@@ -766,51 +758,56 @@
                         },
                         {
                           "key": "boxShadow"
-                        },
-                        {
-                          "key": "chartData.g2xgzbzbko.data"
                         }
                       ],
-                      "customFusionChartConfig": {
-                        "type": "column2d",
-                        "dataSource": {
-                          "chart": {
-                            "caption": "Sales Report",
-                            "xAxisName": "Product Line",
-                            "yAxisName": "Revenue($)",
-                            "theme": "fusion"
-                          },
-                          "data": [
+                      "children": [
+                        {
+                          "boxShadow": "none",
+                          "widgetName": "Canvas6",
+                          "displayName": "Canvas",
+                          "topRow": 0,
+                          "bottomRow": 160,
+                          "parentRowSpace": 1,
+                          "type": "CANVAS_WIDGET",
+                          "canExtend": false,
+                          "hideCard": true,
+                          "minHeight": 140,
+                          "parentColumnSpace": 1,
+                          "leftColumn": 0,
+                          "dynamicBindingPathList": [
                             {
-                              "label": "Product1",
-                              "value": 20000
+                              "key": "borderRadius"
                             },
                             {
-                              "label": "Product2",
-                              "value": 22000
-                            },
-                            {
-                              "label": "Product3",
-                              "value": 32000
+                              "key": "accentColor"
                             }
-                          ]
+                          ],
+                          "children": [],
+                          "key": "wjyr0jkyxm",
+                          "isDeprecated": false,
+                          "rightColumn": 188.359375,
+                          "detachFromLayout": true,
+                          "widgetId": "7dk8v12g6l",
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "szclo27qpk",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
                         }
-                      },
-                      "key": "hi7kjoy5wi",
+                      ],
+                      "key": "09nwv4kce7",
+                      "backgroundColor": "white",
                       "isDeprecated": false,
-                      "rightColumn": 46,
-                      "widgetId": "j5uoqh912g",
+                      "rightColumn": 62,
+                      "widgetId": "szclo27qpk",
                       "isVisible": true,
-                      "version": 1,
                       "parentId": "3s0boh9twm",
-                      "labelOrientation": "auto",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "yAxisName": "Revenue($)",
-                      "chartName": "Sales Report",
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "xAxisName": "Product Line",
-                      "chartType": "LINE_CHART"
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
                     }
                   ],
                   "isDisabled": false,
@@ -835,6 +832,7 @@
               "widgetId": "rddxe8fw00",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "defaultTab": "",
+              "onTabSelected": "{{getSalesOrderData.run()}}",
               "shouldShowTabs": true,
               "tabsObj": {
                 "tab1": {
@@ -865,8 +863,8 @@
               "isCanvas": true,
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
-              "topRow": 95,
-              "bottomRow": 142,
+              "topRow": 105,
+              "bottomRow": 152,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
@@ -1968,7 +1966,7 @@
               "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 149,
+              "topRow": 156,
               "isSortable": true,
               "onPageChange": "{{getOrderDetails.run()}}",
               "type": "TABLE_WIDGET",
@@ -2069,7 +2067,7 @@
               "searchTags": [
                 "datagrid"
               ],
-              "bottomRow": 198,
+              "bottomRow": 205,
               "parentRowSpace": 10,
               "defaultSelectedRow": "0",
               "hideCard": false,
@@ -2224,8 +2222,8 @@
                 "typography",
                 "paragraph"
               ],
-              "topRow": 150,
-              "bottomRow": 155,
+              "topRow": 152,
+              "bottomRow": 157,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -2268,8 +2266,8 @@
               "isCanvas": true,
               "displayName": "Stats Box",
               "iconSVG": "/static/media/icon.382a7c7bc55323fbbd8edd79208c5324.svg",
-              "topRow": 155,
-              "bottomRow": 162,
+              "topRow": 157,
+              "bottomRow": 164,
               "parentRowSpace": 10,
               "type": "STATBOX_WIDGET",
               "hideCard": false,
@@ -2434,8 +2432,8 @@
                 "typography",
                 "paragraph"
               ],
-              "topRow": 145,
-              "bottomRow": 149,
+              "topRow": 152,
+              "bottomRow": 156,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
