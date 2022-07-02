@@ -2,7 +2,7 @@
   "pluginType": "SAAS",
   "pluginId": "google-sheets-plugin",
   "unpublishedAction": {
-    "name": "Query2",
+    "name": "getCustomerData",
     "datasource": {
       "name": "gs-postgre-crm",
       "pluginId": "google-sheets-plugin",
@@ -29,7 +29,7 @@
         },
         {
           "key": "range",
-          "value": ""
+          "value": "A1:L100"
         },
         {
           "key": "spreadsheetName",
@@ -41,15 +41,15 @@
         },
         {
           "key": "queryFormat",
-          "value": "ROWS"
+          "value": "RANGE"
         },
         {
           "key": "rowLimit",
-          "value": "100"
+          "value": "1000"
         },
         {
           "key": "sheetName",
-          "value": "Sales Order"
+          "value": "Customer"
         },
         {
           "key": "rowOffset",
@@ -90,12 +90,12 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_Query2",
+  "id": "Page1_getCustomerData",
   "deleted": false,
-  "gitSyncId": "62c060bf612750023eb089e4_62c06477612750023eb08a7e"
+  "gitSyncId": "62c060bf612750023eb089e4_62c0642b612750023eb08a77"
 }

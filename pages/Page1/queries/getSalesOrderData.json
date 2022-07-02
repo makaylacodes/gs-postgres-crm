@@ -2,7 +2,7 @@
   "pluginType": "SAAS",
   "pluginId": "google-sheets-plugin",
   "unpublishedAction": {
-    "name": "entireDoc",
+    "name": "getSalesOrderData",
     "datasource": {
       "name": "gs-postgre-crm",
       "pluginId": "google-sheets-plugin",
@@ -21,11 +21,11 @@
       "pluginSpecifiedTemplates": [
         {
           "key": "method",
-          "value": "INFO"
+          "value": "GET"
         },
         {
           "key": "sheetUrl",
-          "value": "https://docs.google.com/spreadsheets/d/15tOl3-BCSbo8Q_ghlvN6KeIjfMeK-3SNbyXdk0Qm-gY/edit#gid=1937716544"
+          "value": "https://docs.google.com/spreadsheets/d/15tOl3-BCSbo8Q_ghlvN6KeIjfMeK-3SNbyXdk0Qm-gY/edit#gid=0"
         },
         {
           "key": "range",
@@ -41,15 +41,15 @@
         },
         {
           "key": "queryFormat",
-          "value": "RANGE"
+          "value": "ROWS"
         },
         {
           "key": "rowLimit",
-          "value": "1000"
+          "value": "100"
         },
         {
           "key": "sheetName",
-          "value": "Copy of Northwind Data"
+          "value": "Sales Order"
         },
         {
           "key": "rowOffset",
@@ -90,12 +90,12 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_entireDoc",
+  "id": "Page1_getSalesOrderData",
   "deleted": false,
-  "gitSyncId": "62c060bf612750023eb089e4_62c0642b612750023eb08a77"
+  "gitSyncId": "62c060bf612750023eb089e4_62c06477612750023eb08a7e"
 }
