@@ -38,7 +38,7 @@
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
               "topRow": 9,
-              "bottomRow": 105,
+              "bottomRow": 65,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
@@ -766,7 +766,7 @@
                           "widgetName": "Canvas6",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 160,
+                          "bottomRow": 380,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -782,7 +782,90 @@
                               "key": "accentColor"
                             }
                           ],
-                          "children": [],
+                          "children": [
+                            {
+                              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                              "widgetName": "Chart1",
+                              "allowScroll": false,
+                              "displayName": "Chart",
+                              "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+                              "searchTags": [
+                                "graph",
+                                "visuals",
+                                "visualisations"
+                              ],
+                              "topRow": 12,
+                              "bottomRow": 36,
+                              "parentRowSpace": 10,
+                              "type": "CHART_WIDGET",
+                              "hideCard": false,
+                              "chartData": {
+                                "eosjljhlvn": {
+                                  "seriesName": "Sales",
+                                  "data": "\n{{getSalesOrderData.data }}\n"
+                                },
+                                "cdhi6c9n64": {
+                                  "seriesName": "Employee",
+                                  "data": "[{\"x\":\"lpoopbel\",\"y\":50}]"
+                                }
+                              },
+                              "animateLoading": true,
+                              "parentColumnSpace": 11.100101470947266,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 10,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "boxShadow"
+                                },
+                                {
+                                  "key": "chartData.eosjljhlvn.data"
+                                }
+                              ],
+                              "customFusionChartConfig": {
+                                "type": "column2d",
+                                "dataSource": {
+                                  "chart": {
+                                    "caption": "Sales Report",
+                                    "xAxisName": "Product Line",
+                                    "yAxisName": "Revenue($)",
+                                    "theme": "fusion"
+                                  },
+                                  "data": [
+                                    {
+                                      "label": "Product1",
+                                      "value": 20000
+                                    },
+                                    {
+                                      "label": "Product2",
+                                      "value": 22000
+                                    },
+                                    {
+                                      "label": "Product3",
+                                      "value": 32000
+                                    }
+                                  ]
+                                }
+                              },
+                              "key": "arljwve7b9",
+                              "isDeprecated": false,
+                              "rightColumn": 57,
+                              "widgetId": "ctdio1egdb",
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "7dk8v12g6l",
+                              "labelOrientation": "auto",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "yAxisName": "Revenue($)",
+                              "chartName": "Sales Report",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "xAxisName": "Product Line",
+                              "chartType": "COLUMN_CHART"
+                            }
+                          ],
                           "key": "wjyr0jkyxm",
                           "isDeprecated": false,
                           "rightColumn": 188.359375,
