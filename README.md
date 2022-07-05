@@ -1,38 +1,21 @@
-# gs-postgres-crm
-Built a Customer Relationship Management tool (CRM) using Appsmith, a low-code platform. I learned how to use the Google SHeet API, Stripe API, SMTP API, as well as a PostgreSQL database.
 
-I first built the database in Google Sheets, but later migreated it to PostgreSQL. I used a tutorial so that I could understand how to store data in Google sheets. Once I understood how to input the data, I migrated the database to PostgreSQL.
 
-The purpose of the tutorial was to show that anyone could build a CRM and make it customizable to them and their business. 
+# Customer Relationship Management Tool
 
-I credit freeCodeCamp with the tutorial material, however I did make quite a few adjustments to fit my taste. 
-A CRM is eseentially a way to manage customer data, filter data, and automate data (sending emails, payment reminders, etc.).
-Some examples of famous CRMs are Hubspot, Salesforce, and Oracle.
+This CRM gives small business owners a way to manage and filter customer data. There is also a feature to automate data (sending emails, payment reminders, etc.). Some examples of famous CRMs are Hubspot, Salesforce, and Oracle
 
-How this project created value
+CRMs can be expensive and often have features irrelevant to the owner's business. This CRM allows business owners to customize how they store data so they can save on costs and focus on the data that really matters.
 
-1. CRMs can be expensive, so creating your own CRM customized to your needs should make operating costs cheaper.
-2. Often CRMs come with features that unneccessary or unrelated to your business. Building your own CRM would allow you to focus on the data that really matters to you.
+Platform Functionality :
+   1. Read data from database
+   2. Write data to database
+   3. Refund processing with Stripe API
+   4. Mass personalized emails to specific groups of customers using Mail API.
+   5. Sort data in a visual way, using dynamic graphs and charts.
 
-This CRM allows you to sort data in a visual way, using dynamic graphs and charts. This platform allows you to read or write data to and from the database. It will also allow you to perform refunds directly from the platform using the Stripe API. There will also be the feature to send out mass personalized emails to specific groups of customers using a Mail API.
+An application programming interface or API is a connection between computers or between computer programs. It is a type of software interface, offering a service to other pieces of software. They are behind most apps that we use on a daily basis, which is a Mail API and a Stripe API were used for this project. It saves time when building custom applications. More APIs can be added to this dashboard, it just depends on the users needs.
 
-API- "An applicatoin programming interface is a connection between computers or between computer programs. It is a type of software interface, offering a sesrvice to other pieces of software." -- add source
-
-They are behind most apps that we use on a daily basis, which is why Ania chose to use the Mail API and the Stripe API for this project. It will save time when building custom applications. There are also other APIs that could be added to this dashboard, it just depends on the users needs.
-
-huge credit to Ania Kubów and her FreeCodeCamp tutorial. She didn't just show me how to build a CRM, she also explained what she was doing every step of the way, with every change she made. I truly gained a better understanding of how to work with databases. Even though I did use the tutorial for building and learning, I have made quite a efw changes to make it my own. 
-
-I styled the pages, [fill in once completed]
-
-Part one: Build the CRM and import the data from Google Sheets using the API.
-Adding Data to the Database, Read and write data from the platform that updates the database in Google Sheets.
-
-Part Two: Integrate Stripe API for processesing refunds on the platform, 
-Part Three: Send automated emails using the SMTP API.
-Part Four: Upgrade and migrate the data from Google Sheets to PostgreSQL. PostgreSQL has scalability and to handle more complex features.
-
-THIS  WILL BE CHANGED BEFORE THE FINAL COMMIT OF THE PROJECT
-![](https://raw.githubusercontent.com/appsmithorg/appsmith/release/static/appsmith_logo_primary.png)
+Huge credit to Ania Kubów and her FreeCodeCamp tutorial. She didn't just show me how to build a CRM, she also explained what she was doing every step of the way, with every change she made. I truly gained a better understanding of how to work with databases. I have made several changes to the project in order to make it my own.
 
 This app is built using Appsmith. Turn any datasource into an internal app in minutes. Appsmith lets you drag-and-drop components to build dashboards, write logic with JavaScript objects and connect to any API, database or GraphQL source.
 
