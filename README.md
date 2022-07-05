@@ -7,8 +7,8 @@ This CRM gives small business owners a way to manage and filter customer data. T
 CRMs can be expensive and often have features irrelevant to the owner's business. This CRM allows business owners to customize how they store data so they can save on costs and focus on the data that really matters.
 
 Platform Functionality :
-   1. Read data from database
-   2. Write data to database
+   1. Read data from database (GS/Postgre)
+   2. Write data to database (GS/Postgre)
    3. Refund processing with Stripe API
    4. Mass personalized emails to specific groups of customers using Mail API.
    5. Sort data in a visual way, using dynamic graphs and charts.
