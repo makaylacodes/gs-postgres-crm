@@ -20,3 +20,5 @@ Huge credit to Ania Kubów and her FreeCodeCamp tutorial. She didn't just show m
 This app is built using Appsmith. Turn any datasource into an internal app in minutes. Appsmith lets you drag-and-drop components to build dashboards, write logic with JavaScript objects and connect to any API, database or GraphQL source.
 
 Click <a href="https://app.appsmith.com/app/gs-postgre-crm/page1-62c060bf612750023eb089e7?branch=master"> HERE</a> to see the hosted application.
+
+This project is currently underconstruction and will be completed 7.12.22.
